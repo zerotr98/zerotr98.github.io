@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bulova | Zerion</title>
+
+  <!-- Fuente Barlow Condensed -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    .metallic-text {
+      background: linear-gradient(135deg, #bbb, #eee, #aaa, #ccc);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    .section-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding: 40px;
+    }
+
+    .bulova-section {
+      background-color: #2a2a2a;
+      border: 1px solid #444;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .bulova-section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px rgba(200, 200, 200, 0.2);
+    }
+
+    .bulova-section h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #ddd;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 8px;
+      background-color: #000;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 200px;
+      background-color: #444;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .section-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="metallic-text">Zerion</h1>
+    <h2 class="metallic-text">la casa del buen reloj</h2>
+  </header>
+
+  <div class="section-container">
+    <!-- Imagen real: Bulova98.jpg -->
+    <div class="bulova-section">
+      <h3>Bulova</h3>
+      <img src="Bulova98.jpg" alt="Reloj Bulova azul elegante">
+    </div>
+
+    <!-- Espacios vacíos para otras imágenes -->
+    <div class="bulova-section">
+      <h3>Bulova</h3>
+      <div class="image-placeholder">Imagen 2 aquí</div>
+    </div>
+    <div class="bulova-section">
+      <h3>Bulova</h3>
+      <div class="image-placeholder">Imagen 3 aquí</div>
+    </div>
+    <div class="bulova-section">
+      <h3>Bulova</h3>
+      <div class="image-placeholder">Imagen 4 aquí</div>
+    </div>
+    <div class="bulova-section">
+      <h3>Bulova</h3>
+      <div class="image-placeholder">Imagen 5 aquí</div>
+    </div>
+    <div class="bulova-section">
+      <h3>Bulova</h3>
+      <div class="image-placeholder">Imagen 6 aquí</div>
+    </div>
+  </div>
+</body>
+</html>
